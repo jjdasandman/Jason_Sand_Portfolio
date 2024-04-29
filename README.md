@@ -1,6 +1,6 @@
-# Jason Sand Portfolio
-![Jason_Sand_Stand](assets/img/Snapchat-644016294.jpg)
-A curated collection of my portfolio projects, showcasing my skills and expertise across the Cybersecurity landscape. From Pen Tests to RMP's and Security Scans, each item represents a significant achievement in my academic and professional journey.
+
+![Jason_Sand_Stand](assets/img/fotor-2024042823146.png)
+
 
 # Cybersecurity
   NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of     skill sets in coding, penetration testing, frameworks, and threat response.
@@ -42,52 +42,52 @@ A curated collection of my portfolio projects, showcasing my skills and expertis
   - Consolidated and streamlined log management processes, enhancing efficiency in monitoring and analysis of
   security events
 
-## Education
+# Education
 **Northern Kentucky University                                                                                         May 2025**
 *Bachelor of Science; Cybersecurity*
-  • Computer Science minor
-  Fall 2023; Deans List
-  Currently Pursuing CompTIA Security+ Certification
+  - Computer Science minor
+    - Fall 2023; Deans List
+    - *Currently Pursuing CompTIA Security+ Certification*
 
-### Projects
- ** • Past, Present, and Future of AI in Cyber Security Research paper 2022 **
-    - Explores the historical start of AI and security integration
-    - Explains different neural networks and their specialized uses
-    - Thoroughly explains both machine learning and Cyber Security in a digestible way that anybody can read and
+# Projects
+  - **Past, Present, and Future of AI in Cyber Security Research paper 2022**
+  - Explores the historical start of AI and security integration
+  - Explains different neural networks and their specialized uses
+  - Thoroughly explains both machine learning and Cyber Security in a digestible way that anybody can read and
     understand
-    
-  • Risk Management Plan (RMP) Development
-    - Curated a comprehensive risk management plan for the cybersecurity landscape of GM
-    - Included was a Risk Assessment, Risk Mitigation, Business Impact Analysis, and finally a
+
+- Risk Management Plan (RMP) Development
+  - Curated a comprehensive risk management plan for the cybersecurity landscape of GM
+  - Included was a Risk Assessment, Risk Mitigation, Business Impact Analysis, and finally a
      comprehensive Risk Management Plan
-    - Mock presentation of RMP to senior management showcasing our effective communication of
+  - Mock presentation of RMP to senior management showcasing our effective communication of
      information to stakeholders of all technical levels and abilities
-    - Detailing risk assessment, mitigation strategies, and incident response procedures
-    - Ensured inclusion of both a Disaster Recovery Plan and a Business Continuity Plan
-    
-  • Integrating POE Security Cameras and NVR
-    - Conducted a thorough assessment of the local business's security needs and requirements
-    - Selected, Installed, and Setup suitable Power over Ethernet (POE) security cameras and Network Video
+  - Detailing risk assessment, mitigation strategies, and incident response procedures
+  - Ensured inclusion of both a Disaster Recovery Plan and a Business Continuity Plan
+
+- **Integrating POE Security Cameras and NVR**
+  - Conducted a thorough assessment of the local business's security needs and requirements
+  - Selected, Installed, and Setup suitable Power over Ethernet (POE) security cameras and Network Video
     Recorder (NVR) system for a local business
-    - Installed and configured the POE cameras strategically to provide maximum coverage and surveillance
+  - Installed and configured the POE cameras strategically to provide maximum coverage and surveillance
     capabilities
-    - Configured the NVR for seamless recording, storage, and remote access of video footage
-    - Provided comprehensive training to the business owners and staff on operating and managing the security
+  - Configured the NVR for seamless recording, storage, and remote access of video footage
+  - Provided comprehensive training to the business owners and staff on operating and managing the security
     camera system effectively
-    - Conducted testing and troubleshooting to ensure the system's functionality and reliability
-    
-  • SimpleRisk PCI DSS Compliance Review
-    - Successfully performed a comprehensive PCI DSS compliance review, ensuring adherence to industry
+  - Conducted testing and troubleshooting to ensure the system's functionality and reliability
+
+- **SimpleRisk PCI DSS Compliance Review**
+  - Successfully performed a comprehensive PCI DSS compliance review, ensuring adherence to industry
     standards and best practices
-    - Provided examples of role-based access control privileges for various roles, including tellers, loan officers,
+  - Provided examples of role-based access control privileges for various roles, including tellers, loan officers,
     branch managers, and IT/security personnel
-    - Utilized effective risk management strategies to assess inherent and residual risk levels, ensuring appropriate
+  - Utilized effective risk management strategies to assess inherent and residual risk levels, ensuring appropriate
     mitigation measures
-    - Ensured compliance with PCI DSS requirements and contributed to the overall security posture of the
+  - Ensured compliance with PCI DSS requirements and contributed to the overall security posture of the
     organization while maintaining a professional approach. Adhering to industry standards and ethical guidelines
     throughout the compliance review process
 
-#### Professional Development
+# Professional Development
 **Queen City Con                                                                                           11/17/24 – 11/19/24**
 *Attendee                                                                                                      Cincinnati, OH*
   - Gained insight participating in many cyber security sessions from local CISOs and other leading security
@@ -123,7 +123,7 @@ A curated collection of my portfolio projects, showcasing my skills and expertis
   proficiency in the field
 
 
-##### Work Experince
+# Work Experince
 **Package Handler                                                                                            11/2020 – Current**
 *FedEx Ground                                                                                                Independence, KY*
 - Demonstrated exceptional work ethic and mental fortitude through extended hours of physical labor, often in
