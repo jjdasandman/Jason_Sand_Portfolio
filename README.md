@@ -1,7 +1,6 @@
 
 ![Jason_Sand_Stand](assets/img/fotor-2024042823146.png)
 
-
 # Cybersecurity
   NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.
   Highlights include:
