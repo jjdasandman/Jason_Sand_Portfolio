@@ -3,7 +3,7 @@
 
 
 # Cybersecurity
-  NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of     skill sets in coding, penetration testing, frameworks, and threat response.
+  NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.
   Highlights include:
   - US bank Cyber Security Navigo scholar
   - NKU 2025 college of informatics student
