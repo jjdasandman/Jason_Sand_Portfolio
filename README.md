@@ -146,10 +146,10 @@
   
 **Warehouse Associate                                                                                          5/2018 – 5/2019**
 *RSI Refrigeration                                                                                             Alexandria, KY*
-  • Efficient management and maintenance of the company warehouse, overseeing various responsibilities such as
+  - Efficient management and maintenance of the company warehouse, overseeing various responsibilities such as
   unloading and organizing new materials, optimizing inventory processes, and stocking items on shelves
-  • Played a pivotal role in logistics by coordinating the movement of equipment and trucks within the warehouse,
+  - Played a pivotal role in logistics by coordinating the movement of equipment and trucks within the warehouse,
   ensuring timely and organized workflows
-  • Operated a forklift to load and unload cases from trucks, demonstrating precision and adherence to safety
+  - Operated a forklift to load and unload cases from trucks, demonstrating precision and adherence to safety
   protocols, contributing to a smooth and secure warehouse operation
 
