@@ -1,5 +1,5 @@
 # Jason Sand Portfolio
-![Jason_Sand_Stand](/assets/img/Snapchat-426104168.jpg)
+![Jason_Sand_Stand](assets/img/Snapchat-644016294.jpg)
 A curated collection of my portfolio projects, showcasing my skills and expertise across the Cybersecurity landscape. From Pen Tests to RMP's and Security Scans, each item represents a significant achievement in my academic and professional journey.
 
 # Cybersecurity
