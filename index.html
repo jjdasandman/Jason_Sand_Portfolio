@@ -4,75 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason Sand Portfolio</title>
-    <link rel="stylesheet" href="Jason_Sand_Portfolio/css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="typewriter">
+    <div class="container">
+        <div class="header">
             <h1>Jason Sand</h1>
-            <p>I'm a <span id="typewriter"></span></p>
+            <h2>I'm a <span class="typewriter" data-text='["Cybersecurity Specialist", "Network Security Expert", "Penetration Tester"]'></span></h2>
         </div>
-    </header>
-    <main>
-        <section id="about">
-            <div class="profile-pic">
-                <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand">
-            </div>
-            <h2>Cybersecurity</h2>
-            <p>NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.</p>
-            <ul>
-                <li>🛡️ US bank Cyber Security Navigo scholar</li>
-                <li>🎓 NKU 2025 college of informatics student</li>
-                <li>🔍 Strong understanding of concepts, environments, and day to day work of the field</li>
-                <li>💻 In depth understanding of front end and back end development</li>
-                <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/" target="_blank">Linkedin</a></li>
-            </ul>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>WireShark</li>
-                <li>Network diagnostics</li>
-                <li>Linux configuration</li>
-                <li>Penetration Testing</li>
-                <li>Incident Response</li>
-                <li>HTML/PHP</li>
-                <li>CSS</li>
-                <li>Compliance</li>
-                <li>Nessus</li>
-                <li>XSS/SQL Injection</li>
-                <li>Risk Management Plans</li>
-                <li>RBAC</li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2>Internship Experience</h2>
-            <h3>US Bank Navigo Scholars (10/2019 – 4/2021)</h3>
-            <p><strong>Scholar</strong>, Cincinnati, OH</p>
-            <ul>
-                <li>Understand and setup NIST framework to protect networks from threats through identification, protection, detection, response, and recovery</li>
-                <li>Present proper incident management to team members via email, phone, or verbal communication</li>
-                <li>Consult efficiently with team and build threat response reports through word to present and review</li>
-            </ul>
-            <h3>RSI Refrigeration (1/2024 - Present)</h3>
-            <p><strong>Security Engineer Intern</strong>, Alexandria, KY</p>
-            <ul>
-                <li>Implemented and configured framework to fortify network security, ensuring comprehensive protection against threats through identification, protection, detection, response, and recovery phases</li>
-                <li>Effectively communicated incident management protocols to team members, demonstrating a keen ability to articulate complex security concepts</li>
-                <li>Consolidated and streamlined log management processes, enhancing efficiency in monitoring and analysis of security events</li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>Northern Kentucky University</strong>, May 2025</p>
-            <p>Bachelor of Science; Cybersecurity</p>
-            <p>Computer Science minor</p>
-            <ul>
-                <li>Fall 2023; Deans List</li>
-                <li>Currently Pursuing CompTIA Security+ Certification</li>
-            </ul>
-        </section>
-    </main>
+        <div class="photo">
+            <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand" class="profile-photo">
+        </div>
+        <div class="content">
+            <section id="cybersecurity">
+                <h2>Cybersecurity</h2>
+                <p>NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.</p>
+                <ul>
+                    <li>🛡️ US bank Cyber Security Navigo scholar</li>
+                    <li>🎓 NKU 2025 college of informatics student</li>
+                    <li>🔍 Strong understanding of concepts, environments, and day to day work of the field</li>
+                    <li>💻 In depth understanding of front end and back end development</li>
+                    <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/">Linkedin</a></li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>WireShark</li>
+                    <li>Network diagnostics</li>
+                    <li>Linux configuration</li>
+                    <li>Penetration Testing</li>
+                    <li>Incident Response</li>
+                    <li>HTML/PHP</li>
+                    <li>CSS</li>
+                    <li>Compliance</li>
+                    <li>Nessus</li>
+                    <li>XSS/SQL Injection</li>
+                    <li>Risk Management Plans</li>
+                    <li>RBAC</li>
+                </ul>
+            </section>
+            <!-- Add other sections similarly -->
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>
