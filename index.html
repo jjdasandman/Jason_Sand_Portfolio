@@ -25,8 +25,8 @@
             margin: 0 auto;
             padding: 20px;
         }
-        .header, .content, .navbar, .photo {
-            background: rgba(0, 0, 0, 0.95);
+        .header, .content, .navbar {
+            background: rgba(0, 0, 0, 0.9);
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
@@ -47,6 +47,9 @@
         .navbar {
             display: flex;
             justify-content: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px;
+            border-radius: 8px;
         }
         .navbar a {
             margin: 0 10px;
@@ -78,9 +81,9 @@
         <div class="header">
             <h1>Jason Sand</h1>
             <h2>I'm a <span class="typewriter" data-text='["Penetration Tester", "Network Security Expert", "Cybersecurity Specialist"]'></span></h2>
-            <div class="photo">
-                <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand" class="profile-photo">
-            </div>
+        </div>
+        <div class="photo">
+            <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand" class="profile-photo">
         </div>
         <div class="navbar">
             <a href="#home">Home</a>
@@ -102,7 +105,7 @@
                 <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/">Linkedin</a></li>
             </ul>
         </div>
-        <div class="content" id="skills">
+        <div class="content" id="skills" style="display: none;">
             <h2>Skills</h2>
             <ul>
                 <li>WireShark</li>
@@ -119,7 +122,7 @@
                 <li>RBAC</li>
             </ul>
         </div>
-        <div class="content" id="internship">
+        <div class="content" id="internship" style="display: none;">
             <h2>Internship Experience</h2>
             <h3>US Bank Navigo Scholars (10/2019 – 4/2021)</h3>
             <p><strong>Scholar</strong> - Cincinnati, OH</p>
@@ -136,7 +139,7 @@
                 <li>Consolidated and streamlined log management processes, enhancing efficiency in monitoring and analysis of security events</li>
             </ul>
         </div>
-        <div class="content" id="education">
+        <div class="content" id="education" style="display: none;">
             <h2>Education</h2>
             <h3>Northern Kentucky University (May 2025)</h3>
             <p><strong>Bachelor of Science; Cybersecurity</strong></p>
@@ -146,7 +149,7 @@
                 <li>Currently Pursuing CompTIA Security+ Certification</li>
             </ul>
         </div>
-        <div class="content" id="projects">
+        <div class="content" id="projects" style="display: none;">
             <h2>Projects</h2>
             <h3>Past, Present, and Future of AI in Cyber Security Research paper 2022</h3>
             <ul>
@@ -179,7 +182,7 @@
                 <li>Ensured compliance with PCI DSS requirements and contributed to the overall security posture of the organization while maintaining a professional approach. Adhering to industry standards and ethical guidelines throughout the compliance review process</li>
             </ul>
         </div>
-        <div class="content" id="professional-development">
+        <div class="content" id="professional-development" style="display: none;">
             <h2>Professional Development</h2>
             <h3>Queen City Con (11/17/24 – 11/19/24)</h3>
             <p><strong>Attendee</strong> - Cincinnati, OH</p>
@@ -203,7 +206,7 @@
                 <li>Fostered an open-minded and communal approach to problem-solving within the intelligent network of security professionals</li>
             </ul>
         </div>
-        <div class="content" id="work-experience">
+        <div class="content" id="work-experience" style="display: none;">
             <h2>Work Experience</h2>
             <h3>Package Handler (11/2020 – Current)</h3>
             <p><strong>FedEx Ground</strong> - Independence, KY</p>
@@ -264,6 +267,25 @@
         }
 
         setInterval(draw, 33);
+
+        // Script to handle navigation and show/hide content sections
+        const navLinks = document.querySelectorAll('.navbar a');
+        const contentSections = document.querySelectorAll('.content');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+
+                contentSections.forEach(section => {
+                    if (section.id === targetId) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
