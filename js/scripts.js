@@ -1,28 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const typewriterElement = document.querySelector(".typewriter");
-    const roles = ["Cybersecurity Specialist", "Penetration Tester", "Incident Responder"];
-    let roleIndex = 0;
+document.addEventListener('DOMContentLoaded', (event) => {
+    const typewriter = document.querySelector('.typewriter');
+    const words = ["Cybersecurity Specialist", "Penetration Tester", "Network Security Expert"];
+    let wordIndex = 0;
     let charIndex = 0;
-    let typingSpeed = 100;
+    let isDeleting = false;
+    let wait = 2000;
 
     function type() {
-        if (charIndex < roles[roleIndex].length) {
-            typewriterElement.textContent += roles[roleIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, typingSpeed);
-        } else {
-            setTimeout(erase, 2000);
-        }
-    }
-
-    function erase() {
-        if (charIndex > 0) {
-            typewriterElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        const currentWord = words[wordIndex];
+        if (isDeleting) {
+            typewriter.textContent = currentWord.substring(0, charIndex - 1);
             charIndex--;
-            setTimeout(erase, typingSpeed);
+            if (charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, 50);
+            }
         } else {
-            roleIndex = (roleIndex + 1) % roles.length;
-            setTimeout(type, typingSpeed);
+            typewriter.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(type, wait);
+            } else {
+                setTimeout(type, 100);
+            }
         }
     }
 
