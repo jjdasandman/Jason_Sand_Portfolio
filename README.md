@@ -4,11 +4,11 @@
 # Cybersecurity
   NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.
   Highlights include:
-  - US bank Cyber Security Navigo scholar
-  - NKU 2025 college of informatics student
-  - Strong understanding of concepts, environments, and day to day work of the field
-  - In depth understanding of front end and back end development
-  - [Linkedin](https://www.linkedin.com/in/jasonsand/)
+  - 🛡️ US bank Cyber Security Navigo scholar
+  - 🎓 NKU 2025 college of informatics student
+  - 🔍 Strong understanding of concepts, environments, and day to day work of the field
+  - 💻 In depth understanding of front end and back end development
+  - 🌐 [Linkedin](https://www.linkedin.com/in/jasonsand/)
 
 # Skills
   - WireShark          
