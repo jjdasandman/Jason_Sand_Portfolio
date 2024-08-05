@@ -1,38 +1,50 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header Styling */
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
+/* Main Content Styling */
 main {
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-image {
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Styling */
 section {
     margin: 2rem 0;
 }
@@ -40,6 +52,8 @@ section {
 h2 {
     color: #333;
     margin-bottom: 1rem;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
 }
 
 ul {
@@ -48,13 +62,15 @@ ul {
 }
 
 ul li {
-    background: #fff;
+    background: #f4f4f4;
     margin: 0.5rem 0;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Typewriter Effect Styling */
 .typewriter {
     color: green;
     font-weight: bold;
@@ -63,6 +79,30 @@ ul li {
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: green; }
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: green;
+    }
+}
+
+/* Link Styling */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Article Styling */
+article {
+    background: #fafafa;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
