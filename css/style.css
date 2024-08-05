@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     background: #000;
-    font-family: 'Courier New', Courier, monospace;
     color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 canvas {
@@ -17,45 +16,45 @@ canvas {
 }
 
 .container {
-    position: relative;
-    z-index: 1;
-}
-
-.header, .navbar, .content {
-    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
 }
 
-.header {
-    text-align: center;
+.header, .content, .navbar {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
-.header h1, .header h2 {
-    margin: 10px 0;
+.header h1 {
+    font-size: 2.5em;
 }
 
-.photo {
-    text-align: center;
-    margin: 20px 0;
+.header h2 {
+    font-size: 1.5em;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 200px;
     border-radius: 50%;
-    border: 5px solid #0f0;
+    display: block;
+    margin: 0 auto;
 }
 
 .navbar {
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .navbar a {
-    color: #0f0;
     margin: 0 10px;
+    color: #0f0;
     text-decoration: none;
 }
 
@@ -63,32 +62,22 @@ canvas {
     text-decoration: underline;
 }
 
-.content {
-    margin-top: 20px;
-}
-
-.content section {
-    margin-bottom: 20px;
-}
-
 .content h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 .content p, .content ul {
-    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .content ul {
-    list-style-type: none;
-    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 20px;
 }
 
-.content ul li::before {
-    content: '•';
-    color: #0f0;
-    padding-right: 5px;
+.content ul li {
+    margin-bottom: 10px;
 }
 
 .typewriter {
@@ -100,19 +89,11 @@ canvas {
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #0f0;
-    }
+    from, to { border-color: transparent; }
+    50% { border-color: #0f0; }
 }
