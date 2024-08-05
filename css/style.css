@@ -1,61 +1,69 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
-    color: #ffffff;
+    color: #f0f0f0;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container {
+header {
     text-align: center;
-    padding: 50px;
+    margin: 50px 0;
 }
 
-h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
 }
 
-p {
-    font-size: 24px;
-}
-
-.typewriter {
-    font-weight: bold;
+header p {
+    font-size: 1.5rem;
     color: #00ff00;
-    border-right: 2px solid #00ff00;
-    animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #00ff00;
-    }
 }
 
 main {
-    padding: 20px;
+    max-width: 800px;
+    margin: 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+section h2 {
+    font-size: 2rem;
+    color: #ffffff;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-li {
-    margin-bottom: 10px;
+ul li {
+    background: #333333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.typewriter {
+    display: inline;
+    border-right: 2px solid #00ff00;
+    font-size: 1.5rem;
+    color: #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
 }
