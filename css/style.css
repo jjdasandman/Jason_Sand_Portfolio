@@ -1,68 +1,118 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    color: green;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    z-index: -1;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header, .navbar, .content {
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.header h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.header h2 {
-    font-size: 1.5em;
-    margin: 0;
+.header h1, .header h2 {
+    margin: 10px 0;
 }
 
 .photo {
     text-align: center;
+    margin: 20px 0;
 }
 
 .profile-photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 5px solid #0f0;
+}
+
+.navbar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navbar a {
+    color: #0f0;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content section {
+    margin-bottom: 20px;
 }
 
 .content h2 {
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content p, .content ul {
     margin-bottom: 10px;
 }
 
 .content ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    padding-left: 20px;
 }
 
-.content li {
-    margin: 5px 0;
+.content ul li::before {
+    content: '•';
+    color: #0f0;
+    padding-right: 5px;
 }
 
 .typewriter {
-    border-right: .15em solid green;
+    display: inline-block;
     white-space: nowrap;
     overflow: hidden;
+    border-right: 3px solid #0f0;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-@keyframes blink {
-    from { border-color: transparent; }
-    to { border-color: green; }
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
-.typewriter::after {
-    content: "";
-    animation: blink 0.7s steps(1) infinite;
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #0f0;
+    }
 }
