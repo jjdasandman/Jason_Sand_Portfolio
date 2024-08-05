@@ -1,28 +1,30 @@
-/* scripts.js */
-const typewriter = document.querySelector('.typewriter');
-const roles = ["Cybersecurity Specialist", "Penetration Tester", "Network Engineer"];
-let index = 0;
-let charIndex = 0;
-let currentRole = '';
-let isDeleting = false;
+document.addEventListener("DOMContentLoaded", function() {
+    const typewriterElement = document.querySelector(".typewriter");
+    const roles = ["Cybersecurity Specialist", "Penetration Tester", "Incident Responder"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let typingSpeed = 100;
 
-function type() {
-    if (isDeleting) {
-        currentRole = roles[index].substring(0, charIndex--);
-    } else {
-        currentRole = roles[index].substring(0, charIndex++);
+    function type() {
+        if (charIndex < roles[roleIndex].length) {
+            typewriterElement.textContent += roles[roleIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingSpeed);
+        } else {
+            setTimeout(erase, 2000);
+        }
     }
 
-    typewriter.textContent = currentRole;
-
-    if (!isDeleting && charIndex === roles[index].length) {
-        setTimeout(() => isDeleting = true, 2000);
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        index = (index + 1) % roles.length;
+    function erase() {
+        if (charIndex > 0) {
+            typewriterElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, typingSpeed);
+        } else {
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(type, typingSpeed);
+        }
     }
 
-    setTimeout(type, isDeleting ? 50 : 100);
-}
-
-document.addEventListener('DOMContentLoaded', type);
+    type();
+});
