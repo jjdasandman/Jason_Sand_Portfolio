@@ -41,7 +41,7 @@
         .content {
             margin: 20px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.7); /* Adjust this value for opacity */
             border-radius: 10px;
         }
         h1, h2, h3 {
@@ -64,6 +64,25 @@
         a:hover {
             text-decoration: underline;
         }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #0f0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -76,8 +95,24 @@
         <div class="photo">
             <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand" class="profile-photo">
         </div>
-        <div class="content">
-            <section id="cybersecurity">
+        <nav>
+            <a href="#" data-section="landing">Home</a>
+            <a href="#" data-section="cybersecurity">Cybersecurity</a>
+            <a href="#" data-section="skills">Skills</a>
+            <a href="#" data-section="internship-experience">Internship Experience</a>
+            <a href="#" data-section="education">Education</a>
+            <a href="#" data-section="projects">Projects</a>
+            <a href="#" data-section="professional-development">Professional Development</a>
+            <a href="#" data-section="work-experience">Work Experience</a>
+        </nav>
+        <div id="landing" class="content section active">
+            <section>
+                <h2>Welcome</h2>
+                <p>Welcome to my portfolio! Click on the links above to navigate through my professional experiences, skills, and projects.</p>
+            </section>
+        </div>
+        <div id="cybersecurity" class="content section">
+            <section>
                 <h2>Cybersecurity</h2>
                 <p>NKU student currently studying cyber security with strong focus in Cyber analyst and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.</p>
                 <ul>
@@ -88,7 +123,9 @@
                     <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/">Linkedin</a></li>
                 </ul>
             </section>
-            <section id="skills">
+        </div>
+        <div id="skills" class="content section">
+            <section>
                 <h2>Skills</h2>
                 <ul>
                     <li>WireShark</li>
@@ -105,7 +142,9 @@
                     <li>RBAC</li>
                 </ul>
             </section>
-            <section id="internship-experience">
+        </div>
+        <div id="internship-experience" class="content section">
+            <section>
                 <h2>Internship Experience</h2>
                 <h3>US Bank Navigo Scholars (10/2019 – 4/2021)</h3>
                 <p><strong>Scholar</strong> – Cincinnati, OH</p>
@@ -122,7 +161,9 @@
                     <li>Consolidated and streamlined log management processes, enhancing efficiency in monitoring and analysis of security events</li>
                 </ul>
             </section>
-            <section id="education">
+        </div>
+        <div id="education" class="content section">
+            <section>
                 <h2>Education</h2>
                 <h3>Northern Kentucky University (May 2025)</h3>
                 <p><strong>Bachelor of Science; Cybersecurity</strong></p>
@@ -132,7 +173,9 @@
                     <li>*Currently Pursuing CompTIA Security+ Certification*</li>
                 </ul>
             </section>
-            <section id="projects">
+        </div>
+        <div id="projects" class="content section">
+            <section>
                 <h2>Projects</h2>
                 <h3>Past, Present, and Future of AI in Cyber Security Research paper 2022</h3>
                 <ul>
@@ -165,7 +208,9 @@
                     <li>Ensured compliance with PCI DSS requirements and contributed to the overall security posture of the organization while maintaining a professional approach. Adhering to industry standards and ethical guidelines throughout the compliance review process</li>
                 </ul>
             </section>
-            <section id="professional-development">
+        </div>
+        <div id="professional-development" class="content section">
+            <section>
                 <h2>Professional Development</h2>
                 <h3>Queen City Con (11/17/24 – 11/19/24)</h3>
                 <p><strong>Attendee</strong> – Cincinnati, OH</p>
@@ -198,7 +243,9 @@
                     <li>Achieved a notable ranking or recognition within the MetaCTF competition, showcasing dedication and proficiency in the field</li>
                 </ul>
             </section>
-            <section id="work-experience">
+        </div>
+        <div id="work-experience" class="content section">
+            <section>
                 <h2>Work Experience</h2>
                 <h3>Package Handler (11/2020 – Current)</h3>
                 <p><strong>FedEx Ground</strong> – Independence, KY</p>
@@ -265,6 +312,17 @@
 
         // Loop the animation
         setInterval(draw, 33);
+
+        // Navigation functionality
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(this.dataset.section).classList.add('active');
+            });
+        });
     </script>
 </body>
 </html>
