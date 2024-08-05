@@ -17,68 +17,58 @@
         }
         canvas {
             display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
+            position: absolute;
             z-index: -1;
         }
         .container {
-            position: relative;
-            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        .header {
-            text-align: center;
-            margin-top: 50px;
+        .header, .content, .navbar, .photo {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
         }
-        .photo {
-            text-align: center;
-            margin-top: 20px;
+        .header h1 {
+            font-size: 2.5em;
+        }
+        .header h2 {
+            font-size: 1.5em;
         }
         .profile-photo {
+            width: 100%;
+            max-width: 200px;
             border-radius: 50%;
-            border: 2px solid #0f0;
-        }
-        .content {
-            margin: 20px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.9); /* Adjust this value for opacity */
-            border-radius: 10px;
-        }
-        h1, h2, h3 {
-            color: #0f0;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 20px; /* Indentation for list items */
-        }
-        ul li {
-            padding: 5px 0;
-            text-indent: -20px; /* Negative indent to align text properly */
-        }
-        a {
-            color: #0f0;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            color: #0f0;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            display: none;
-        }
-        .active {
             display: block;
+            margin: 0 auto;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            margin: 0 10px;
+            color: #0f0;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .content p, .content ul {
+            margin-left: 20px;
+        }
+        .content ul {
+            list-style-type: disc;
+            margin-bottom: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -87,213 +77,178 @@
     <div class="container">
         <div class="header">
             <h1>Jason Sand</h1>
-            <h2>I'm a <span class="typewriter" data-text='["Cybersecurity Specialist", "Network Security Expert", "Penetration Tester"]'></span></h2>
+            <h2>I'm a <span class="typewriter" data-text='["Penetration Tester", "Network Security Expert", "Cybersecurity Specialist"]'></span></h2>
+            <div class="photo">
+                <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand" class="profile-photo">
+            </div>
         </div>
-        <div class="photo">
-            <img src="assets/img/fotor-2024042823146.png" alt="Jason Sand" class="profile-photo">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#internship">Internship Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#professional-development">Professional Development</a>
+            <a href="#work-experience">Work Experience</a>
         </div>
-        <nav>
-            <a href="#" data-section="landing">Home</a>
-            <a href="#" data-section="cybersecurity">Cybersecurity</a>
-            <a href="#" data-section="skills">Skills</a>
-            <a href="#" data-section="internship-experience">Internship Experience</a>
-            <a href="#" data-section="education">Education</a>
-            <a href="#" data-section="projects">Projects</a>
-            <a href="#" data-section="professional-development">Professional Development</a>
-            <a href="#" data-section="work-experience">Work Experience</a>
-        </nav>
-        <div id="landing" class="content section active">
-            <section>
-                <h2>Professional Summary</h2>
-                <p>I am an NKU student currently studying cyber security with a strong focus on Cyber analysis and protection. I have a rich variety of skill sets in coding, penetration testing, frameworks, and threat response. I am a US bank Cyber Security Navigo scholar and NKU 2025 college of informatics student. My understanding of concepts, environments, and day-to-day work of the field is extensive, and I have an in-depth understanding of front-end and back-end development.</p>
-                <p>Check out some of my <a href="#" data-section="projects">projects</a> to see what I've been working on.</p>
-            </section>
+        <div class="content" id="home">
+            <h2>Cybersecurity</h2>
+            <p>NKU student currently studying cyber security with a strong focus on Cyber analysis and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.</p>
+            <ul>
+                <li>🛡️ US bank Cyber Security Navigo scholar</li>
+                <li>🎓 NKU 2025 college of informatics student</li>
+                <li>🔍 Strong understanding of concepts, environments, and day-to-day work of the field</li>
+                <li>💻 In-depth understanding of front-end and back-end development</li>
+                <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/">Linkedin</a></li>
+            </ul>
         </div>
-        <div id="cybersecurity" class="content section">
-            <section>
-                <h2>Cybersecurity</h2>
-                <p>NKU student currently studying cyber security with a strong focus on Cyber analysis and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.</p>
-                <ul>
-                    <li>🛡️ US bank Cyber Security Navigo scholar</li>
-                    <li>🎓 NKU 2025 college of informatics student</li>
-                    <li>🔍 Strong understanding of concepts, environments, and day-to-day work of the field</li>
-                    <li>💻 In-depth understanding of front-end and back-end development</li>
-                    <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/">Linkedin</a></li>
-                </ul>
-            </section>
+        <div class="content" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>WireShark</li>
+                <li>Network diagnostics</li>
+                <li>Linux configuration</li>
+                <li>Penetration Testing</li>
+                <li>Incident Response</li>
+                <li>HTML/PHP</li>
+                <li>CSS</li>
+                <li>Compliance</li>
+                <li>Nessus</li>
+                <li>XSS/SQL Injection</li>
+                <li>Risk Management Plans</li>
+                <li>RBAC</li>
+            </ul>
         </div>
-        <div id="skills" class="content section">
-            <section>
-                <h2>Skills</h2>
-                <ul>
-                    <li>WireShark</li>
-                    <li>Network diagnostics</li>
-                    <li>Linux configuration</li>
-                    <li>Penetration Testing</li>
-                    <li>Incident Response</li>
-                    <li>HTML/PHP</li>
-                    <li>CSS</li>
-                    <li>Compliance</li>
-                    <li>Nessus</li>
-                    <li>XSS/SQL Injection</li>
-                    <li>Risk Management Plans</li>
-                    <li>RBAC</li>
-                </ul>
-            </section>
+        <div class="content" id="internship">
+            <h2>Internship Experience</h2>
+            <h3>US Bank Navigo Scholars (10/2019 – 4/2021)</h3>
+            <p><strong>Scholar</strong> - Cincinnati, OH</p>
+            <ul>
+                <li>Understand and setup NIST framework to protect networks from threats through identification, protection, detection, response, and recovery</li>
+                <li>Present proper incident management to team members via email, phone, or verbal communication</li>
+                <li>Consult efficiently with team and build threat response reports through word to present and review</li>
+            </ul>
+            <h3>RSI Refrigeration (1/2024 - Present)</h3>
+            <p><strong>Security Engineer Intern</strong> - Alexandria, KY</p>
+            <ul>
+                <li>Implemented and configured framework to fortify network security, ensuring comprehensive protection against threats through identification, protection, detection, response, and recovery phases</li>
+                <li>Effectively communicated incident management protocols to team members, demonstrating a keen ability to articulate complex security concepts</li>
+                <li>Consolidated and streamlined log management processes, enhancing efficiency in monitoring and analysis of security events</li>
+            </ul>
         </div>
-        <div id="internship-experience" class="content section">
-            <section>
-                <h2>Internship Experience</h2>
-                <h3>US Bank Navigo Scholars (10/2019 – 4/2021)</h3>
-                <p><strong>Scholar</strong> – Cincinnati, OH</p>
-                <ul>
-                    <li>Understand and setup NIST framework to protect networks from threats through identification, protection, detection, response, and recovery</li>
-                    <li>Present proper incident management to team members via email, phone, or verbal communication</li>
-                    <li>Consult efficiently with team and build threat response reports through word to present and review</li>
-                </ul>
-                <h3>RSI Refrigeration (1/2024 - Present)</h3>
-                <p><strong>Security Engineer Intern</strong> – Alexandria, KY</p>
-                <ul>
-                    <li>Implemented and configured framework to fortify network security, ensuring comprehensive protection against threats through identification, protection, detection, response, and recovery phases</li>
-                    <li>Effectively communicated incident management protocols to team members, demonstrating a keen ability to articulate complex security concepts</li>
-                    <li>Consolidated and streamlined log management processes, enhancing efficiency in monitoring and analysis of security events</li>
-                </ul>
-            </section>
+        <div class="content" id="education">
+            <h2>Education</h2>
+            <h3>Northern Kentucky University (May 2025)</h3>
+            <p><strong>Bachelor of Science; Cybersecurity</strong></p>
+            <ul>
+                <li>Computer Science minor</li>
+                <li>Fall 2023; Deans List</li>
+                <li>Currently Pursuing CompTIA Security+ Certification</li>
+            </ul>
         </div>
-        <div id="education" class="content section">
-            <section>
-                <h2>Education</h2>
-                <h3>Northern Kentucky University (May 2025)</h3>
-                <p><strong>Bachelor of Science; Cybersecurity</strong></p>
-                <ul>
-                    <li>Computer Science minor</li>
-                    <li>Fall 2023; Deans List</li>
-                    <li>*Currently Pursuing CompTIA Security+ Certification*</li>
-                </ul>
-            </section>
+        <div class="content" id="projects">
+            <h2>Projects</h2>
+            <h3>Past, Present, and Future of AI in Cyber Security Research paper 2022</h3>
+            <ul>
+                <li>Explores the historical start of AI and security integration</li>
+                <li>Explains different neural networks and their specialized uses</li>
+                <li>Thoroughly explains both machine learning and Cyber Security in a digestible way that anybody can read and understand</li>
+            </ul>
+            <h3>Risk Management Plan (RMP) Development</h3>
+            <ul>
+                <li>Curated a comprehensive risk management plan for the cybersecurity landscape of GM</li>
+                <li>Included was a Risk Assessment, Risk Mitigation, Business Impact Analysis, and finally a comprehensive Risk Management Plan</li>
+                <li>Mock presentation of RMP to senior management showcasing our effective communication of information to stakeholders of all technical levels and abilities</li>
+                <li>Detailing risk assessment, mitigation strategies, and incident response procedures</li>
+                <li>Ensured inclusion of both a Disaster Recovery Plan and a Business Continuity Plan</li>
+            </ul>
+            <h3>Integrating POE Security Cameras and NVR</h3>
+            <ul>
+                <li>Conducted a thorough assessment of the local business's security needs and requirements</li>
+                <li>Selected, Installed, and Setup suitable Power over Ethernet (POE) security cameras and Network Video Recorder (NVR) system for a local business</li>
+                <li>Installed and configured the POE cameras strategically to provide maximum coverage and surveillance capabilities</li>
+                <li>Configured the NVR for seamless recording, storage, and remote access of video footage</li>
+                <li>Provided comprehensive training to the business owners and staff on operating and managing the security camera system effectively</li>
+                <li>Conducted testing and troubleshooting to ensure the system's functionality and reliability</li>
+            </ul>
+            <h3>SimpleRisk PCI DSS Compliance Review</h3>
+            <ul>
+                <li>Successfully performed a comprehensive PCI DSS compliance review, ensuring adherence to industry standards and best practices</li>
+                <li>Provided examples of role-based access control privileges for various roles, including tellers, loan officers, branch managers, and IT/security personnel</li>
+                <li>Utilized effective risk management strategies to assess inherent and residual risk levels, ensuring appropriate mitigation measures</li>
+                <li>Ensured compliance with PCI DSS requirements and contributed to the overall security posture of the organization while maintaining a professional approach. Adhering to industry standards and ethical guidelines throughout the compliance review process</li>
+            </ul>
         </div>
-        <div id="projects" class="content section">
-            <section>
-                <h2>Projects</h2>
-                <h3>Past, Present, and Future of AI in Cyber Security Research paper 2022</h3>
+        <div class="content" id="professional-development">
+            <h2>Professional Development</h2>
+            <h3>Queen City Con (11/17/24 – 11/19/24)</h3>
+            <p><strong>Attendee</strong> - Cincinnati, OH</p>
+            <ul>
+                <li>Gained insight participating in many cyber security sessions from local CISOs and other leading security industry experts</li>
+                <li>Key Learnings:</li>
                 <ul>
-                    <li>Explores the historical start of AI and security integration</li>
-                    <li>Explains different neural networks and their specialized uses</li>
-                    <li>Thoroughly explains both machine learning and Cyber Security in a digestible way that anybody can read and understand</li>
+                    <li>Continuous adaptation in the ever-evolving field of cybersecurity, enhancing my strategic approach to cyber threats (Red Queen problem)</li>
+                    <li>Significance of aligning personal values with behavioral change strategies in the context of cybersecurity training, to create an impactful, meaningful, and effective approach to fostering a security conscious culture</li>
+                    <li>Importance of personal values in behavior change for cybersecurity training</li>
+                    <li>Applied knowledge to enhance cybersecurity perspectives and strategies</li>
                 </ul>
-                <h3>Risk Management Plan (RMP) Development</h3>
-                <ul>
-                    <li>Curated a comprehensive risk management plan for the cybersecurity landscape of GM</li>
-                    <li>Included was a Risk Assessment, Risk Mitigation, Business Impact Analysis, and finally a comprehensive Risk Management Plan</li>
-                    <li>Mock presentation of RMP to senior management showcasing our effective communication of information to stakeholders of all technical levels and abilities</li>
-                    <li>Detailing risk assessment, mitigation strategies, and incident response procedures</li>
-                    <li>Ensured inclusion of both a Disaster Recovery Plan and a Business Continuity Plan</li>
-                </ul>
-                <h3>Integrating POE Security Cameras and NVR</h3>
-                <ul>
-                    <li>Conducted a thorough assessment of the local business's security needs and requirements</li>
-                    <li>Selected, Installed, and Setup suitable Power over Ethernet (POE) security cameras and Network Video Recorder (NVR) system for a local business</li>
-                    <li>Installed and configured the POE cameras strategically to provide maximum coverage and surveillance capabilities</li>
-                    <li>Configured the NVR for seamless recording, storage, and remote access of video footage</li>
-                    <li>Provided comprehensive training to the business owners and staff on operating and managing the security camera system effectively</li>
-                    <li>Conducted testing and troubleshooting to ensure the system's functionality and reliability</li>
-                </ul>
-                <h3>SimpleRisk PCI DSS Compliance Review</h3>
-                <ul>
-                    <li>Successfully performed a comprehensive PCI DSS compliance review, ensuring adherence to industry standards and best practices</li>
-                    <li>Provided examples of role-based access control privileges for various roles, including tellers, loan officers, branch managers, and IT/security personnel</li>
-                    <li>Utilized effective risk management strategies to assess inherent and residual risk levels, ensuring appropriate mitigation measures</li>
-                    <li>Ensured compliance with PCI DSS requirements and contributed to the overall security posture of the organization while maintaining a professional approach. Adhering to industry standards and ethical guidelines throughout the compliance review process</li>
-                </ul>
-            </section>
+            </ul>
+            <h3>CiNPA Security Special Interest Group (Security SIG) Meetings (Monthly Meetings)</h3>
+            <p><strong>Attendee</strong> - Cincinnati, OH</p>
+            <ul>
+                <li>Participated in discussions analyzing vulnerabilities and exploring mitigation strategies</li>
+                <li>Collaborated with the community security experts to dissect real-world examples, scrutinizing each aspect and theorizing potential scenarios before expert explanations</li>
+                <li>Opportunities to learn from broad range of professionals; from Security Engineers to CISO’s</li>
+                <li>Gained professional insights into the latest trends and threats in information security</li>
+                <li>Fostered an open-minded and communal approach to problem-solving within the intelligent network of security professionals</li>
+            </ul>
         </div>
-        <div id="professional-development" class="content section">
-            <section>
-                <h2>Professional Development</h2>
-                <h3>Queen City Con (11/17/24 – 11/19/24)</h3>
-                <p><strong>Attendee</strong> – Cincinnati, OH</p>
-                <ul>
-                    <li>Gained insight participating in many cyber security sessions from local CISOs and other leading security industry experts</li>
-                    <li>Key Learnings:
-                        <ul>
-                            <li>Continuous adaptation in the ever-evolving field of cybersecurity, enhancing my strategic approach to cyber threats (Red Queen problem)</li>
-                            <li>Significance of aligning personal values with behavioral change strategies in the context of cybersecurity training, to create an impactful, meaningful, and effective approach to fostering a security conscious culture</li>
-                            <li>Importance of personal values in behavior change for cybersecurity training</li>
-                            <li>Applied knowledge to enhance cybersecurity perspectives and strategies</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h3>CiNPA Security Special Interest Group (Security SIG) Meetings (Monthly Meetings)</h3>
-                <p><strong>Attendee</strong> – Cincinnati, OH</p>
-                <ul>
-                    <li>Participated in discussions analyzing vulnerabilities and exploring mitigation strategies</li>
-                    <li>Collaborated with the community security experts to dissect real-world examples, scrutinizing each aspect and theorizing potential scenarios before expert explanations</li>
-                    <li>Opportunities to learn from broad range of professionals; from Security Engineers to CISO’s</li>
-                    <li>Gained professional insights into the latest trends and threats in information security</li>
-                    <li>Fostered an open-minded and communal approach to problem-solving within the intelligent network of security professionals</li>
-                </ul>
-                <h3>MetaCTF (2/15/24)</h3>
-                <p><strong>Team Participant</strong> – Cincinnati, OH</p>
-                <ul>
-                    <li>Successfully solved challenges in areas such as cryptography, reverse engineering, and web security during the competition</li>
-                    <li>Collaborated with team members to analyze and address complex cybersecurity challenges, highlighting strong teamwork and communication skills</li>
-                    <li>Applied knowledge of cybersecurity concepts to strategize and implement effective solutions within the competition's limited time constraints</li>
-                    <li>Achieved a notable ranking or recognition within the MetaCTF competition, showcasing dedication and proficiency in the field</li>
-                </ul>
-            </section>
-        </div>
-        <div id="work-experience" class="content section">
-            <section>
-                <h2>Work Experience</h2>
-                <h3>Package Handler (11/2020 – Current)</h3>
-                <p><strong>FedEx Ground</strong> – Independence, KY</p>
-                <ul>
-                    <li>Demonstrated exceptional work ethic and mental fortitude through extended hours of physical labor, often in challenging conditions with limited communication and light</li>
-                    <li>Developed resilience and perseverance while handling heavy packages and maintaining productivity in the demanding environment</li>
-                    <li>Transferred technical skills of problem-solving and troubleshooting to timely resolving issues with critical scanners, sensors, and tablets used in our daily operations</li>
-                    <li>Adapted to effectively communicate technical information and troubleshoot devices for individuals with varying levels of technical abilities</li>
-                </ul>
-                <h3>Lead Line Cook (5/2019 - 11/2020)</h3>
-                <p><strong>LaRosa’s Pizzeria</strong> – Cold Springs, KY</p>
-                <ul>
-                    <li>Excelled as a Lead Line Cook in a fast-paced culinary environment, showcasing expertise in maintaining a smooth and efficient kitchen operation</li>
-                    <li>Effectively communicated and collaborated with the kitchen team, reading out ingredients and ensuring the consistency and excellence of food quality</li>
-                    <li>Demonstrated exceptional multitasking skills by overseeing the constant flow of pizzas, coordinating with team members to meet customer demand while maintaining food quality</li>
-                </ul>
-                <h3>Warehouse Associate (5/2018 – 5/2019)</h3>
-                <p><strong>RSI Refrigeration</strong> – Alexandria, KY</p>
-                <ul>
-                    <li>Efficient management and maintenance of the company warehouse, overseeing various responsibilities such as unloading and organizing new materials, optimizing inventory processes, and stocking items on shelves</li>
-                    <li>Played a pivotal role in logistics by coordinating the movement of equipment and trucks within the warehouse, ensuring timely and organized workflows</li>
-                    <li>Operated a forklift to load and unload cases from trucks, demonstrating precision and adherence to safety protocols, contributing to a smooth and secure warehouse operation</li>
-                </ul>
-            </section>
+        <div class="content" id="work-experience">
+            <h2>Work Experience</h2>
+            <h3>Package Handler (11/2020 – Current)</h3>
+            <p><strong>FedEx Ground</strong> - Independence, KY</p>
+            <ul>
+                <li>Demonstrated exceptional work ethic and mental fortitude through extended hours of physical labor, often in challenging conditions with limited communication and light</li>
+                <li>Developed resilience and perseverance while handling heavy packages and maintaining productivity in the demanding environment</li>
+                <li>Transferred technical skills of problem-solving and troubleshooting to timely resolving issues with critical scanners, sensors, and tablets used in our daily operations</li>
+                <li>Adapted to effectively communicate technical information and troubleshoot devices for individuals with varying levels of technical abilities</li>
+            </ul>
+            <h3>Lead Line Cook (5/2019 - 11/2020)</h3>
+            <p><strong>LaRosa’s Pizzeria</strong> - Cold Springs, KY</p>
+            <ul>
+                <li>Excelled as a Lead Line Cook in a fast-paced culinary environment, showcasing expertise in maintaining a smooth and efficient kitchen operation</li>
+                <li>Effectively communicated and collaborated with the kitchen team, reading out ingredients and ensuring the consistency and excellence of food quality</li>
+                <li>Demonstrated exceptional multitasking skills by overseeing the constant flow of pizzas, coordinating with team members to meet customer demand while maintaining food quality</li>
+            </ul>
+            <h3>Warehouse Associate (5/2018 – 5/2019)</h3>
+            <p><strong>RSI Refrigeration</strong> - Alexandria, KY</p>
+            <ul>
+                <li>Efficient management and maintenance of the company warehouse, overseeing various responsibilities such as unloading and organizing new materials, optimizing inventory processes, and stocking items on shelves</li>
+                <li>Played a pivotal role in logistics by coordinating the movement of equipment and trucks within the warehouse, ensuring timely and organized workflows</li>
+                <li>Operated a forklift to load and unload cases from trucks, demonstrating precision and adherence to safety protocols, contributing to a smooth and secure warehouse operation</li>
+            </ul>
         </div>
     </div>
     <script src="js/scripts.js"></script>
     <script>
+        // Matrix effect JS code
         var canvas = document.querySelector('canvas'),
             ctx = canvas.getContext('2d');
 
-        // Setting the width and height of the canvas
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        // Setting up the letters
         var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
         letters = letters.split('');
 
-        // Setting up the columns
         var fontSize = 10,
             columns = canvas.width / fontSize;
 
-        // Setting up the drops
         var drops = [];
         for (var i = 0; i < columns; i++) {
             drops[i] = 1;
         }
 
-        // Setting up the draw function
         function draw() {
             ctx.fillStyle = 'rgba(0, 0, 0, .1)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -308,19 +263,7 @@
             }
         }
 
-        // Loop the animation
         setInterval(draw, 33);
-
-        // Navigation functionality
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelectorAll('.section').forEach(section => {
-                    section.classList.remove('active');
-                });
-                document.getElementById(this.dataset.section).classList.add('active');
-            });
-        });
     </script>
 </body>
 </html>
