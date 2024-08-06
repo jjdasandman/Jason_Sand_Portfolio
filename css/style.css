@@ -30,17 +30,61 @@ body {
 
 .photo {
     text-align: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.glitch {
+    animation: glitch 0.3s linear infinite;
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: inset(20% 0 30% 0);
+        transform: translate(-10px);
+    }
+    20% {
+        clip-path: inset(40% 0 20% 0);
+        transform: translate(10px);
+    }
+    40% {
+        clip-path: inset(10% 0 40% 0);
+        transform: translate(-10px);
+    }
+    60% {
+        clip-path: inset(30% 0 10% 0);
+        transform: translate(10px);
+    }
+    80% {
+        clip-path: inset(40% 0 30% 0);
+        transform: translate(-10px);
+    }
+    100% {
+        clip-path: inset(20% 0 40% 0);
+        transform: translate(10px);
+    }
 }
 
 .content h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    color: inherit;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: inherit;
 }
 
 .content ul {
@@ -66,4 +110,73 @@ body {
 .typewriter::after {
     content: "";
     animation: blink 0.7s steps(1) infinite;
+}
+
+/* Section-specific colors */
+#home {
+    color: #0f0;
+}
+#skills {
+    color: #0ff;
+}
+#internship {
+    color: #f0f;
+}
+#education {
+    color: #ff0;
+}
+#projects {
+    color: #f00;
+}
+#professional-development {
+    color: #f90;
+}
+#work-experience {
+    color: #09f;
+}
+
+/* Navigation bar color coding */
+.navbar a[href="#home"] {
+    color: #0f0;
+}
+.navbar a[href="#skills"] {
+    color: #0ff;
+}
+.navbar a[href="#internship"] {
+    color: #f0f;
+}
+.navbar a[href="#education"] {
+    color: #ff0;
+}
+.navbar a[href="#projects"] {
+    color: #f00;
+}
+.navbar a[href="#professional-development"] {
+    color: #f90;
+}
+.navbar a[href="#work-experience"] {
+    color: #09f;
+}
+
+/* Content color differentiation */
+.content #home h2, .content #home h3, .content #home ul li {
+    color: #0f0;
+}
+.content #skills h2, .content #skills h3, .content #skills ul li {
+    color: #0ff;
+}
+.content #internship h2, .content #internship h3, .content #internship ul li {
+    color: #f0f;
+}
+.content #education h2, .content #education h3, .content #education ul li {
+    color: #ff0;
+}
+.content #projects h2, .content #projects h3, .content #projects ul li {
+    color: #f00;
+}
+.content #professional-development h2, .content #professional-development h3, .content #professional-development ul li {
+    color: #f90;
+}
+.content #work-experience h2, .content #work-experience h3, .content #work-experience ul li {
+    color: #09f;
 }
