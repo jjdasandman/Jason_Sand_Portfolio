@@ -58,6 +58,7 @@
         }
         .navbar a {
             margin: 0 10px;
+            color: #0f0;
             text-decoration: none;
         }
         .navbar a:hover {
@@ -66,10 +67,6 @@
         .content h2 {
             font-size: 2em;
             margin-bottom: 10px;
-        }
-        .content h3 {
-            font-size: 1.5em;
-            margin-bottom: 5px;
         }
         .content p, .content ul {
             margin-left: 20px;
@@ -81,50 +78,15 @@
         .content ul li {
             margin-bottom: 10px;
         }
-
-        /* Section-specific colors */
-        #home {
-            color: #0f0;
+        .content.home p,
+        .content.home ul li {
+            color: #00ff00;
         }
-        #skills {
-            color: #0ff;
+        .content.home ul li:nth-child(odd) {
+            color: #66ff66;
         }
-        #internship {
-            color: #f0f;
-        }
-        #education {
-            color: #ff0;
-        }
-        #projects {
-            color: #f00;
-        }
-        #professional-development {
-            color: #0f0;
-        }
-        #work-experience {
-            color: #0ff;
-        }
-        /* Navigation bar color coding */
-        .navbar a[href="#home"] {
-            color: #0f0;
-        }
-        .navbar a[href="#skills"] {
-            color: #0ff;
-        }
-        .navbar a[href="#internship"] {
-            color: #f0f;
-        }
-        .navbar a[href="#education"] {
-            color: #ff0;
-        }
-        .navbar a[href="#projects"] {
-            color: #f00;
-        }
-        .navbar a[href="#professional-development"] {
-            color: #0f0;
-        }
-        .navbar a[href="#work-experience"] {
-            color: #0ff;
+        .content.home h3 {
+            color: #ccffcc;
         }
     </style>
 </head>
@@ -147,7 +109,7 @@
             <a href="#professional-development">Professional Development</a>
             <a href="#work-experience">Work Experience</a>
         </div>
-        <div class="content" id="home">
+        <div class="content home" id="home">
             <h2>Cybersecurity</h2>
             <p>NKU student currently studying cyber security with a strong focus on Cyber analysis and protection and a rich variety of skill sets in coding, penetration testing, frameworks, and threat response.</p>
             <ul>
@@ -155,7 +117,7 @@
                 <li>🎓 NKU 2025 college of informatics student</li>
                 <li>🔍 Strong understanding of concepts, environments, and day-to-day work of the field</li>
                 <li>💻 In-depth understanding of front-end and back-end development</li>
-                <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/">Linkedin</a></li>
+                <li>🌐 <a href="https://www.linkedin.com/in/jasonsand/" style="color: #00ff00;">Linkedin</a></li>
             </ul>
         </div>
         <div class="content" id="skills" style="display: none;">
@@ -178,14 +140,14 @@
         <div class="content" id="internship" style="display: none;">
             <h2>Internship Experience</h2>
             <h3>US Bank Navigo Scholars (10/2019 – 4/2021)</h3>
-            <p><strong>Scholar</strong> - Cincinnati, OH</p>
+            <p><strong>Scholar - Cincinnati, OH</strong></p>
             <ul>
                 <li>Understand and setup NIST framework to protect networks from threats through identification, protection, detection, response, and recovery</li>
                 <li>Present proper incident management to team members via email, phone, or verbal communication</li>
                 <li>Consult efficiently with team and build threat response reports through word to present and review</li>
             </ul>
             <h3>RSI Refrigeration (1/2024 - Present)</h3>
-            <p><strong>Security Engineer Intern</strong> - Alexandria, KY</p>
+            <p><strong>Security Engineer Intern - Alexandria, KY</strong></p>
             <ul>
                 <li>Implemented and configured framework to fortify network security, ensuring comprehensive protection against threats through identification, protection, detection, response, and recovery phases</li>
                 <li>Effectively communicated incident management protocols to team members, demonstrating a keen ability to articulate complex security concepts</li>
@@ -238,7 +200,7 @@
         <div class="content" id="professional-development" style="display: none;">
             <h2>Professional Development</h2>
             <h3>Queen City Con (11/17/24 – 11/19/24)</h3>
-            <p><strong>Attendee</strong> - Cincinnati, OH</p>
+            <p><strong>Attendee - Cincinnati, OH</strong></p>
             <ul>
                 <li>Gained insight participating in many cyber security sessions from local CISOs and other leading security industry experts</li>
                 <li>Key Learnings:</li>
@@ -250,7 +212,7 @@
                 </ul>
             </ul>
             <h3>CiNPA Security Special Interest Group (Security SIG) Meetings (Monthly Meetings)</h3>
-            <p><strong>Attendee</strong> - Cincinnati, OH</p>
+            <p><strong>Attendee - Cincinnati, OH</strong></p>
             <ul>
                 <li>Participated in discussions analyzing vulnerabilities and exploring mitigation strategies</li>
                 <li>Collaborated with the community security experts to dissect real-world examples, scrutinizing each aspect and theorizing potential scenarios before expert explanations</li>
@@ -262,7 +224,7 @@
         <div class="content" id="work-experience" style="display: none;">
             <h2>Work Experience</h2>
             <h3>Package Handler (11/2020 – Current)</h3>
-            <p><strong>FedEx Ground</strong> - Independence, KY</p>
+            <p><strong>FedEx Ground - Independence, KY</strong></p>
             <ul>
                 <li>Demonstrated exceptional work ethic and mental fortitude through extended hours of physical labor, often in challenging conditions with limited communication and light</li>
                 <li>Developed resilience and perseverance while handling heavy packages and maintaining productivity in the demanding environment</li>
@@ -270,14 +232,14 @@
                 <li>Adapted to effectively communicate technical information and troubleshoot devices for individuals with varying levels of technical abilities</li>
             </ul>
             <h3>Lead Line Cook (5/2019 - 11/2020)</h3>
-            <p><strong>LaRosa’s Pizzeria</strong> - Cold Springs, KY</p>
+            <p><strong>LaRosa’s Pizzeria - Cold Springs, KY</strong></p>
             <ul>
                 <li>Excelled as a Lead Line Cook in a fast-paced culinary environment, showcasing expertise in maintaining a smooth and efficient kitchen operation</li>
                 <li>Effectively communicated and collaborated with the kitchen team, reading out ingredients and ensuring the consistency and excellence of food quality</li>
                 <li>Demonstrated exceptional multitasking skills by overseeing the constant flow of pizzas, coordinating with team members to meet customer demand while maintaining food quality</li>
             </ul>
             <h3>Warehouse Associate (5/2018 – 5/2019)</h3>
-            <p><strong>RSI Refrigeration</strong> - Alexandria, KY</p>
+            <p><strong>RSI Refrigeration - Alexandria, KY</strong></p>
             <ul>
                 <li>Efficient management and maintenance of the company warehouse, overseeing various responsibilities such as unloading and organizing new materials, optimizing inventory processes, and stocking items on shelves</li>
                 <li>Played a pivotal role in logistics by coordinating the movement of equipment and trucks within the warehouse, ensuring timely and organized workflows</li>
